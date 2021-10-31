@@ -1,11 +1,11 @@
 import React from 'react';
+import Header from './Header';
 
-function App() {
-  return (
-    <div className="App">
-        <h1>Hello Gmail Clone</h1>
-    </div>
-  );
+function App(){
+    return(
+       <Header/>
+    );
 }
+
 
 export default App;
