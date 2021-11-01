@@ -3,10 +3,7 @@ import React from 'react';
 import './Sidebar.css';
 import AddIcon from '@material-ui/icons/Add';
 import SidebarOption from './SidebarOption';
-import InboxIcon from '@material-ui/icons/Inbox';
-import StarIcon from '@material-ui/icons/Star';
-// import SentIcon from '@material-ui/icons/Sent';
-// import StarIcon from '@material-ui/icons/Star';
+import { LabelImportant,Inbox,Star,AccessTime,NearMe } from '@material-ui/icons';
 
 function Sidebar(){
     return(
@@ -15,11 +12,12 @@ function Sidebar(){
                 Compose
             </Button>
 
-            <SidebarOption Icon={InboxIcon} title="inbox" number={54}/>
-            <SidebarOption Icon={StarIcon} title="Starred" number={0}/>
-            {/* <SidebarOption Icon={SentIcon} title="inbox" number={54}/>
-            <SidebarOption Icon={InboxIcon} title="inbox" number={54}/>
-             */}
+            <SidebarOption Icon={Inbox} title="inbox" number={54} selected={true}/>
+            <SidebarOption Icon={Star} title="Starred" number={0}/>
+            <SidebarOption Icon={AccessTime} title="Snoozed" number={0}/>
+            <SidebarOption Icon={LabelImportant} title="Important" number={54}/>
+            <SidebarOption Icon={NearMe} title="Sent" number={0}/>
+            
         </div>
     );
 }
