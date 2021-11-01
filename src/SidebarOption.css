@@ -11,7 +11,7 @@
 
 .sidebarOption:hover,
 .sidebarOption:hover>h3,
-.sidebarOption:hover>p
+.sidebarOption:hover>p,
 .sidebarOption--active,
 .sidebarOption--active>h3
 .sidebarOption--active>p{
